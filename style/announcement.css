@@ -1,0 +1,35 @@
+#announcement-bar{
+    background-color: var(--primary-black);
+    height:38px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#announcement-bar .container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#announcement-bar h4{
+    color:var(--primary-white);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18.9px;
+    padding : 12px 10px;
+}
+
+#announcement-bar .container a{
+    color:var(--primary-white);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18.9px;
+}
+@media screen and (max-width:768px){
+    #announcement-bar{
+        height:auto;
+        padding:15px 0px;
+    }
+    
+}

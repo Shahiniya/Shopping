@@ -1,0 +1,119 @@
+#hero{
+    background-color: var(--primary-gray);
+}
+
+#hero .container .wrapper{
+    display: flex;
+    align-items: center;
+}
+
+#hero .container .wrapper-left{
+      display: flex;
+    flex-direction: column;
+    gap:32px;
+}
+
+#hero .container .wrapper-left h1{
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 54px;
+    color: var(--primary-black);
+    font-family: bold;
+    max-width:500px;
+}
+
+#hero .container .wrapper-left p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 5px;
+    color:rgba(0,0,0,0.4);
+    max-width: 480px;
+}
+
+#hero .container .wrapper-left button{
+    background-color: var(--primary-black);
+    color:var(--primary-white);
+    width: 200px;
+    height: 40px;
+    border-radius: 45px;    
+    transition:all .3s ease-in-out;
+    font-size: 12px;
+    font-weight: 200;
+}
+#hero .container .wrapper-left button:active{
+    transform:scale(0.90);
+}
+
+#hero .statistics{
+    display: flex;
+      padding:20px 0  0 0px;
+}
+
+#hero .statistics-element{
+    padding:0px 10px
+}
+
+#hero .statistics-element h3{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 54px;
+}
+
+#hero .statistics-element h4{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 22px;
+    color:rgba(0,0,0,0.4);
+}
+
+#hero .wrapper-right{
+    /* padding: 0 0px 0 80px; */
+    position: relative;
+    max-height: 663px;
+    overflow:hidden;
+}
+
+#hero .wrapper-right .hero{
+    max-width: 600px;
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+ }
+
+#hero .wrapper-right .romb1{
+position: absolute;
+left:490px;
+top:120px;
+width: 104px;
+height: 104px;
+}
+
+#hero .wrapper-right .romb2{
+    position: absolute;
+    left:50px;
+    top:280px;
+    width: 56px;
+    height: 56px;
+    }
+
+    @media screen and (max-width:1024px){
+       #hero .wrapper{
+        flex-direction: column;
+       }
+       #hero .wrapper h1{
+        font-size: 54px;
+        line-height: 54px;
+    }
+     }
+
+     
+    @media screen and (max-width:768px){
+        #hero .wrapper{
+         flex-direction: column;
+        }
+        #hero .wrapper .rich-text h1{
+         font-size: 34px;
+         line-height: 34px;
+     }
+      }
